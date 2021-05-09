@@ -1,0 +1,6 @@
+[submodule "map2loop-2"]
+	path = map2loop-2
+	url = git@github.com:Loop3D/map2loop-2.git
+[submodule "LoopStructural"]
+	path = LoopStructural
+	url = git@github.com:Loop3D/LoopStructural.git
