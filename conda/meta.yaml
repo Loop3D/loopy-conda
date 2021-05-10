@@ -6,7 +6,7 @@ package:
   version: "{{ GIT_DESCRIBE_TAG }}"
 
 source:
-  git_url: https://github.com/Loop3D/map2loop-2
+  git_url: https://github.com/Loop3D/loopy-conda.git
 
 build:
   number: 0
@@ -45,15 +45,16 @@ requirements:
 
 test:
   imports:
-   - map2loop
+   - loopy
 
 about:
-  home: "https://github.com/Loop3D/map2loop-2"
+  home: "https://github.com/Loop3D/loopy-conda.git"
   license: MIT
   license_family: MIT
   license_file: ../LICENSE
-  summary: "Generate 3D model data using 2D maps."
+  summary: "Loop's complete workflow for 3D geological modelling."
 
 extra:
   recipe-maintainers:
     - yohanderose
+    - lachlangrose

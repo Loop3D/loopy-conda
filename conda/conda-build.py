@@ -25,7 +25,7 @@ def build(packages):
             sys.exit(
                 "Make sure each package directory is at the same level as this script.")
 
-    python_versions = [3.6, 3.7, 3.8, 3.9]
+    python_versions = [3.7]
     print("Building " + " ".join(packages),
           "for python versions {}".format(python_versions))
 

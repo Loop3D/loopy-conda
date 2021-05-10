@@ -1,4 +1,4 @@
-# Loopy
+# looPy
 
-Package wrapper for the complete loop programmatic workflow.
+Wrapper package for the complete loop workflow.
 
