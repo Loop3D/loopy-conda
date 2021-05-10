@@ -7,8 +7,8 @@ notebooks/Testing.ipynb
 .vscode/
 _version.py
 3/
-loopy/map2loop/
-loopy/LoopStructural/
+loopy/map2loop
+loopy/LoopStructural
 
 # Created by https://www.toptal.com/developers/gitignore/api/python,visualstudiocode,c++,cmake
 # Edit at https://www.toptal.com/developers/gitignore?templates=python,visualstudiocode,c++,cmake

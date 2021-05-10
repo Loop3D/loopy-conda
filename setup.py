@@ -7,6 +7,8 @@ from setuptools.command.develop import develop
 import subprocess
 import platform
 from loopy import __version__
+import numpy
+from Cython.Build import cythonize
 
 
 head, tail = os.path.split(sys.argv[0])
@@ -108,4 +110,10 @@ setuptools.setup(
         'develop': LoopyInstaller,
     },
     python_requires='>=3.6',
+    ext_modules=cythonize("loopy/LoopStructural/interpolators/cython/*.pyx",
+                          compiler_directives={"language_level": "3"}),
+    include_dirs=[numpy.get_include()],
+    include_package_data=True,
+    package_data={'LoopStructural': [
+        'datasets/data/*.csv', 'datasets/data/*.txt']},
 )
